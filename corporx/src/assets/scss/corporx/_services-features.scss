@@ -1,0 +1,26 @@
+.services-single{
+  & .services-content-wrap{
+    a{
+      color: $gray-600 !important;
+      &:hover{
+        color: $secondary !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px){
+  .feature-card {
+    flex-direction: row !important;
+  }
+}
+.card-icon img{
+  @include media-breakpoint-down(sm){
+    width: 50px;
+  }
+}
+@media (min-width: 1200px){
+  .card-texts {
+    padding-right: 2.1875rem !important;
+  }
+}

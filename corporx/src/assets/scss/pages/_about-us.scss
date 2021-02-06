@@ -1,0 +1,59 @@
+.feature-tabs-center{
+  margin-bottom: 25px;
+}
+
+.feature-tabs li{
+  position: relative;
+  margin: 0 15px;
+}
+.feature-tabs li:first-child{
+  margin-left: 0;
+}
+.feature-tabs li a {
+  border: none !important;
+  padding: 0 0 6px;
+}
+.feature-tabs li a, .feature-tabs li a.active{
+  background: transparent !important;
+}
+.feature-tabs li a h6{
+  font-size: 16px;
+  line-height: 21px;
+}
+.feature-tabs li a:before{
+  position: absolute;
+  content: "";
+  width: 50%;
+  background: rgba(0,0,0,.2);
+  -webkit-transition: all .7s cubic-bezier(.19,1,.22,1) 0s;
+  transition: all .7s cubic-bezier(.19,1,.22,1) 0s;
+  height: 2px;
+  bottom: 0;
+}
+.feature-tabs li a.active:before{
+  width: 100%;
+  background: $secondary;
+}
+.feature-tabs li a.active{
+  color: $secondary !important;
+}
+
+.dot-shape{
+  bottom: -3px;
+  left: auto;
+  right: -3px;
+  z-index: -1;
+}
+.dot-shape-top{
+  top: -5px;
+  z-index: -1;
+  left: -10px;
+}
+@media (max-width: 575px) and (min-width: 320px){
+  .dot-shape{
+    right: 0;
+  }
+  .dot-shape-top{
+    right: 0;
+  }
+}

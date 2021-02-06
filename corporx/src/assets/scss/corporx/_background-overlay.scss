@@ -1,0 +1,49 @@
+.gradient-overly-right-light, .gradient-overly-right-color, .gradient-overly-left, .gradient-overly-bottom, .gradient-overly-top{
+  z-index: 1;
+  width: 100%;
+  min-width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+.gradient-overly-right-light:before,
+.gradient-overly-right-color:before,
+.gradient-overly-left:before,
+.gradient-overly-bottom:before,
+.gradient-overly-top:before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.gradient-overly-right-light:before {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, $primary), to(transparent));
+  background: linear-gradient(to right, #fff4f4 30%, rgba(26, 44, 121, 0.18) 100%);
+
+}
+.gradient-overly-right-color:before {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, $primary), to(transparent));
+  background: linear-gradient(to right, $primary 30%, rgba(26, 44, 121, 0.18) 100%);
+
+}
+.gradient-overly-left:before {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, $primary), to(transparent));
+  background: linear-gradient(to left, $primary 30%, rgba(26, 44, 121, 0.18) 100%);
+}
+.gradient-overly-bottom:before {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, $primary), to(transparent));
+  background: linear-gradient(to bottom, $primary 45%, rgba(26, 44, 121, 0.18) 100%);
+}
+.gradient-overly-top:before {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, $primary), to(transparent));
+  background: linear-gradient(to top, $primary 35%, rgba(26, 44, 121, 0.18) 100%);
+}

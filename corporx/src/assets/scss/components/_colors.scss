@@ -1,0 +1,36 @@
+//
+//
+// colors.scss
+//
+//
+
+.bg-gradient{
+  background: linear-gradient(to right, $primary 10%, $secondary) !important;
+}
+
+
+@each $color,
+$value in $theme-colors {
+  .bg-#{$color}-alt {
+    background-color: rgba($value, .15);
+  }
+}
+
+.bg-white-alt{
+  background-color: rgba($white, .12);
+}
+
+//Social brand
+@each $color,
+$value in $brand-colors {
+  .brand-#{$color} {
+    color: $value;
+  }
+}
+
+@each $color,
+$value in $brand-colors {
+  .bg-#{$color}-alt {
+    background-color: rgba($value, .15);
+  }
+}

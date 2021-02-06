@@ -1,0 +1,77 @@
+
+
+/*new css new update*/
+
+//404 css
+.error-content .notfound-404 {
+  position: relative;
+  height: 280px;
+  z-index: 2;
+  margin-bottom: 30px;
+}
+.error-content .notfound-404 h1 {
+  font-size: 230px;
+  font-weight: 700;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-size: cover;
+  background-position: center;
+}
+
+
+@media (min-width: 320px) and (max-width: 767px){
+  .error-content .notfound-404{
+    height: auto;
+    display: block;
+    position: relative;
+  }
+  .error-content .notfound-404 h1{
+    font-size: 80px;
+    position: relative;
+  }
+
+}
+
+//login css
+
+.login-signup-form .form-group .input-group.input-group-merge>.form-control{
+  text-indent: 35px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  height: calc(2.65em + .75rem + 2px);
+  &:focus{
+    z-index: inherit;
+  }
+}
+
+
+.input-icon {
+  position: absolute;
+  z-index: 2;
+  top: 55%;
+  transform: translateY(-55%);
+  left: 15px;
+  i{
+    color: $gray-500;
+  }
+}
+
+.subscribe-form input.form-control {
+  height: calc(2.85em + .75rem + 2px);
+  padding: 5px 15px;
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.22);
+}
+
+.subscribe-form input.button {
+  position: absolute;
+  right: 6px;
+  border-radius: 30px;
+  padding: initial;
+  top: 6px;
+  bottom: 6px;
+  width: 30%;
+}

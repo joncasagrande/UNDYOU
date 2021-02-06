@@ -1,0 +1,117 @@
+/**
+ * = Shapes
+ */
+
+ .pattern,
+ .pattern {
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     background-repeat: repeat-x;
+     background-position: bottom;
+     background-size: 90% 130px;
+     height: 0;
+     padding: 0; /* reset */
+     padding-bottom: 125px;
+ 
+     @include media-breakpoint-down(md) {
+         background-size: 100% 90px;
+        padding-bottom: 90px;
+     }
+     
+     &.bottom {
+         bottom: -10px;
+         @include transform(rotate(180deg));
+     }
+ 
+     &.top {
+         top: -10px
+     }
+ }
+ 
+ .pattern-soft {
+     background-image: url('../img/pattern-wave-soft.svg');
+ }
+
+
+.organic-shape {
+	&:not(.position-relative) {
+		position: absolute;
+    }
+    
+	svg {
+		background: none !important;
+    }
+    
+	&.top {
+		top: 0;
+    }
+    
+	&.left {
+		left: 0;
+    }
+    
+	&.right {
+		right: 0;
+    }
+    
+	&.middle-y {
+		top: 50%;
+    }
+    
+	&.middle-x {
+		left: 50%;
+    }
+    
+	&.bottom {
+		bottom: 0;
+    }
+    
+	@for $i from 2 through 5 {
+		&.scale-#{$i}{
+			svg{
+				transform: scale(#{$i});
+			}
+		}
+    }
+}
+
+// Icon (svg) organic-shapes fill colors
+@each $color, $value in $theme-colors {
+    .organic-shape-#{$color}{ 
+        fill: rgba( $value, .3 );
+    }
+}
+
+// Shape (svg) fill colors
+@each $color, $value in $theme-colors {
+    .fill-#{$color}  {
+        fill: $value;
+    }
+
+    .stroke-#{$color}  {
+        stroke: $value;
+    }
+}
+
+// Shape colors
+@each $color, $value in $theme-colors {
+    .shape-#{$color}  {
+        background-color: $value;
+        .step-number{
+            background-color:$value;
+        }
+    }
+}
+
+.fancy-radius{
+    border-radius:63% 37% 30% 70% / 50% 45% 55% 50%;
+}
+.fancy-radius-2{
+  border-radius: 40% 60% 74% 26% / 57% 73% 27% 43%;
+}
+
+.color-shape {
+    width: 7rem;
+    height: 7rem;
+}

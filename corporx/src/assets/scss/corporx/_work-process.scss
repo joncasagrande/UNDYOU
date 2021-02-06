@@ -1,0 +1,21 @@
+@media (min-width: 992px){
+  .step-dots.right-radial-top:before {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 30px;
+    left: 55%;
+    background: url("../img/radial-shape-top.svg")center center no-repeat;
+  }
+
+  .step-dots.right-radial-bottom:before {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 30px;
+    left: 55%;
+    top: 30px;
+    background: url("../img/radial-shape-bottom.svg") center center no-repeat;
+  }
+
+}

@@ -1,0 +1,40 @@
+button.scroll-top:focus{
+  outline: none;
+}
+.scroll-top.open {
+  bottom: 30px;
+}
+
+.scroll-top {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  position: fixed;
+  bottom: 105%;
+  right: 50px;
+  font-size: 16px;
+  border-radius: 50%;
+  z-index: 99;
+  color: $white;
+  text-align: center;
+  cursor: pointer;
+  background: $secondary;
+  transition: 1s ease;
+  border: none;
+}
+.scroll-top span {
+  color: $white;
+}
+
+.scroll-top:after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 1;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 80%);
+}
+

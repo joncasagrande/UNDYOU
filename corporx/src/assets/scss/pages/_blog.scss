@@ -1,0 +1,171 @@
+.blog-img{
+  a{
+    bottom: 15px;
+    right: 20px;
+  }
+}
+
+.post-content blockquote {
+  border-left: 2px solid $border-color;
+  padding: 10px 0 10px 40px;
+  margin: 40px 0;
+  transition: all .3s ease-in-out;
+}
+.post-content blockquote:hover {
+  border-color: $secondary;
+}
+
+.post-content ol {
+  list-style-type: decimal;
+}
+.post-content ul, .post-content ol {
+  margin: 15px 0 15px 40px;
+}
+
+/*comments css*/
+.comment, .comment-shop {
+  border-bottom: 1px solid  $border-color;
+  padding: 30px 0 0;
+}
+.comment-author, .comment-author-shop {
+  margin: 5px 0 0;
+  height: 64px;
+  width: 64px;
+  float: left;
+}
+
+.comment-body, .comment-body-shop {
+  position: relative;
+  padding: 0 0 30px;
+  margin: 0 0 0 85px;
+}
+.comment-meta, .comment-meta-shop {
+  margin: 0 0 15px;
+}
+
+.children > .comment, .children > .comment-shop {
+  border: 0;
+  border-top: 1px solid $border-color;
+  margin-left: 85px;
+}
+.comment-meta-author a, .comment-meta-author-shop a {
+  font-weight: 500;
+  color: $dark;
+}
+.comment-meta-date a, .comment-meta-date-shop a {
+  color: $gray-500;
+  opacity: .6;
+  font-size: 14px;
+}
+.comment-meta-date a:hover, .comment-meta-date a:focus, .comment-meta-date-shop a:hover, .comment-meta-date-shop a:focus {
+  color: $secondary;
+  opacity: 1;
+}
+
+.comment-reply, .comment-reply-shop {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 13px;
+}
+
+.comment-reply > a, .comment-reply-shop > a {
+  background: $gray-300;
+  border-radius: .1875rem;
+  padding: 5px 15px;
+  display: block;
+  color: #222;
+}
+.comment-reply > a:hover, .comment-reply > a:focus, .comment-reply-shop > a:hover, .comment-reply-shop > a:focus {
+  background: $secondary;
+  color: $white;
+}
+
+.comment-list + .comment-respond, .comment-list-shop + .comment-respond {
+  margin-top: 30px;
+}
+
+
+/*blog sidebar*/
+
+.widget-search {
+  padding: 0;
+  border: 0;
+}
+.widget {
+  margin-bottom:50px;
+}
+.widget-search form {
+  position: relative;
+}
+
+.widget-search .search-button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 50%;
+  height: 100%;
+  right: .875rem;
+  transform: translateY(-50%);
+  transition: all .3s ease-out;
+  color: $gray-500;
+}
+.widget-search .search-button span{
+  font-size: 20px;
+  line-height: 32px;
+}
+button, [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button;
+}
+.widget .widget-title {
+  margin-bottom: 24px;
+}
+
+.widget ul {
+  margin-bottom: 0;
+}
+.widget-categories ul li:first-child, .widget-recent-entries ul li:first-child, .widget-recent-entries-custom ul li:first-child {
+  padding-top: 0;
+}
+.widget-categories ul li, .widget-recent-entries ul li, .widget-recent-entries-custom ul li {
+  border-bottom: 1px solid $border-color;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.widget-recent-entries-custom .wi {
+  float: left;
+  width: 80px;
+}
+.widget-recent-entries-custom .wb {
+  padding-left: 16px;
+  width: 100%;
+}
+.widget-recent-entries-custom .wi, .widget-recent-entries-custom .wb {
+  vertical-align: middle;
+  display: table-cell;
+}
+.post-date {
+  font-size: 13px;
+  color: $gray-500;
+  display: block;
+  margin: 0;
+}
+.tag-cloud > a, .post-tags > a {
+  background: $gray-300;
+  border-radius: .1875rem;
+  position: relative;
+  display: inline-block;
+  padding: 6px 15px;
+  margin: 5px 8px 5px 0;
+  text-transform: uppercase;
+  font-size: 10px !important;
+  color: $dark;
+  font-weight: 500;
+  font-family: 'Rubik','Helvetica', sans-serif;
+}
+.tag-cloud > a:hover, .post-tags > a:hover {
+  background:$primary;
+  color: $white;
+  opacity: 1;
+}

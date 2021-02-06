@@ -1,0 +1,41 @@
+.affix{
+  @include transition($transition-base);
+}
+@each $color, $value in $theme-colors {
+  &.navbar-theme-#{$color}.affix {
+    background-color: $value;
+  }
+}
+
+.fixed-top{
+  top: auto;
+}
+.fixed-top.affix{
+  top: 0;
+  @include transition($transition-base);
+}
+
+.navbar-theme-white{
+  .navbar-nav{
+    .nav-item.dropdown{
+      .nav-link{
+        display: flex;
+        align-items: center;
+        @include media-breakpoint-down(md){
+          color: $gray-700;
+        }
+      }
+      a{
+        @include media-breakpoint-down(md){
+          color: $gray-700;
+        }
+      }
+    }
+  }
+  .navbar-nav .nav-link{
+    @include media-breakpoint-down(md){
+      color: $gray-700;
+    }
+  }
+
+}

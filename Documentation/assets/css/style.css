@@ -1,0 +1,14 @@
+
+.markdown-section ul li{
+  color: #34495e;
+  font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
+  font-size: 15px;
+}
+
+.markdown-section hr {
+  margin: 1em 0;
+}
+
+.markdown-section h5, .markdown-section h6 {
+  margin: 0px;
+}

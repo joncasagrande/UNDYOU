@@ -1,0 +1,49 @@
+.custom-indicators{
+   li{
+     min-width: 200px;
+     transition: all 0.3s ease-in;
+     & button{
+       width: 100%;
+       padding: 1.45rem;
+       justify-content: center;
+       border-radius: 4px 4px 0 0;
+       transition: $transition-base;
+     }
+     &.active button{
+       background: $secondary;
+       color: $white;
+       span{
+         color: $white;
+       }
+     }
+   }
+}
+
+//offer demo hero
+.big-text {
+  position: relative;
+  font-size: 120px;
+  line-height: 130px;
+  @include media-breakpoint-down(sm){
+    font-size: 60px;
+    line-height: 80px;
+  }
+}
+
+
+.big-text span {
+  position: absolute;
+  font-size: 16px;
+  top: -65px;
+  @include media-breakpoint-down(sm){
+    top: -35px;
+  }
+}
+
+// hero counter
+
+.highlight-list{
+  li{
+    min-width: 160px;
+  }
+}

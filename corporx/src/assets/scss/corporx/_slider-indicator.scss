@@ -1,0 +1,42 @@
+/*custom dot style*/
+.custom-dot.owl-theme .owl-dots .owl-dot span{
+  margin: 2px;
+  height: 10px;
+  width: 10px;
+  border-color: transparent;
+}
+.custom-dot.custom-dot-2.owl-theme .owl-dots .owl-dot{
+  display: block;
+}
+.custom-dot.custom-dot-2.owl-theme .owl-dots{
+  position: absolute;
+  right: 15px;
+  top: auto;
+  bottom: 40%;
+  margin-top: 0;
+}
+
+
+.custom-dot.custom-dot-2.owl-theme .owl-dots button{
+  margin: 15px 0;
+  border: 1px solid $border-color-white;
+}
+
+.custom-dot.owl-theme .owl-dots button{
+  border-radius: 100%;
+  border: 1px solid $primary;
+  margin: 0 4px;
+}
+.custom-dot.owl-theme .owl-dots button:focus, .custom-arrow.owl-theme .owl-nav button:focus{
+  outline: none;
+}
+
+.custom-dot.owl-theme .owl-dots button.owl-dot.active, .custom-dot.owl-theme .owl-dots button.owl-dot span{
+  background: $gray-300;
+}
+.custom-dot.owl-theme .owl-dots button.owl-dot span:hover{
+  background: $secondary;
+}
+.custom-dot.owl-theme .owl-dots button.owl-dot.active span{
+  background: $secondary;
+}

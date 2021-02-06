@@ -1,0 +1,12 @@
+.download-btn-wrap{
+    & a.btn{
+      transition: $transition-base;
+      &:hover{
+        background: $white;
+        color: $dark !important;
+        &.text-white .h6{
+          color: $dark !important;
+        }
+      }
+    }
+}
