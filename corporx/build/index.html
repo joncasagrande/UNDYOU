@@ -35,10 +35,10 @@
         <nav class="navbar navbar-expand-lg navbar-transparent navbar-dark navbar-theme-primary fixed-top headroom">
             <div class="container position-relative">
                 <a class="navbar-brand mr-lg-3" href="index.html">
-                    <img class="navbar-brand-dark" src="assets/img/logo_white.png" width="120" height="30" alt="menuimage">
-                    <img class="navbar-brand-light" src="assets/img/logo.png" alt="menuimage">
+                    <img class="navbar-brand-dark" src="assets/img/logo.png" width="120" height="30" alt="menuimage">
+                    <img class="navbar-brand-light" src="assets/img/logo_white.png" alt="menuimage">
                 </a>
-                <div class="navbar-collapse collapse" id="navbar-default-primary">
+                <!-- <div class="navbar-collapse collapse" id="navbar-default-primary">
                     <div class="navbar-collapse-header">
                         <div class="row">
                             <div class="col-6 collapse-brand">
@@ -75,7 +75,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">A Equipa</a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <div class="d-flex align-items-center">
                     <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar-default-primary" aria-controls="navbar-default-primary" aria-expanded="false" aria-label="Toggle navigation">
@@ -445,7 +445,7 @@
                         <div class="profile-card">
                             <div class="card bg-soft  shadow-sm animate-hover border-variant-soft">
                                 <div class="profile-image-small  bg-white  shadow-inset shadow border border-light rounded-circle p-1 mt-5 mb-4">
-                                    <img src="assets/img/team/francisco.jpg" class="card-img-top rounded-circle" alt="Christopher Avatar">
+                                    <img src="assets/img/team/francisco.jpg" width="118" height="118" class="card-img-top rounded-circle" alt="Christopher Avatar">
                                 </div>
                                 <div class="card-body text-center px-5 pb-5 pt-0">
                                     <h3 class="h5 mb-2">Francisco Costa</h3>
@@ -527,14 +527,34 @@
                             </button>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
-                        <h5 class="mb-4">Company</h5>
-                        <ul class="links-vertical">
-                            <li><a target="_blank" href="#">About Us</a></li>
-                            <li><a target="_blank" href="#">Careers</a></li>
-                            <li><a target="_blank" href="#">Customers</a></li>
-                            <li><a target="_blank" href="#">Community</a></li>
-                        </ul>
+                    <div class="col-md-6">
+                        <div class="contact-us-form rounded p-5">
+                            <h4>Entre em contacto</h4>
+                            <form action="#" method="POST" id="contactForm" class="contact-us-form mt-4">
+                                <div class="form-row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="name" placeholder="Nome" required="required">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <textarea name="message" id="message" class="form-control" rows="7" cols="25" placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 mt-3">
+                                        <button type="submit" class="btn btn-secondary" id="btnContactUs">
+                                            Enviar Mensagem
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                     
                 </div>
@@ -546,8 +566,7 @@
                     <div class="col p-3">
                         <div class="d-flex text-center justify-content-center align-items-center">
                             <p class="copyright pb-0 mb-0">Copyrights © 2021. All
-                                rights reserved by
-                                <a href="https://themeforest.net/user/themetags" target="_blank">ThemeTags</a>
+                                rights reserved by UNDYOU
                             </p>
                         </div>
                     </div>
