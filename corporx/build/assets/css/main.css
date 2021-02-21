@@ -16015,7 +16015,7 @@ input[type="button"].btn-block {
 
 /* line 285, src/assets/scss/bootstrap/_navbar.scss */
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.9);
+  color: #1e90ff;
 }
 
 /* line 17, src/assets/scss/bootstrap/mixins/_hover.scss */
