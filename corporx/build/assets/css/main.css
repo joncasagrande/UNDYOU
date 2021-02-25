@@ -44106,7 +44106,7 @@ button.section-gray-800:focus {
 
 /* line 208, src/assets/scss/layout/_navbar.scss */
 .navbar-transparent {
-  background-color: transparent;
+  background-color: #fff;
   border: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
